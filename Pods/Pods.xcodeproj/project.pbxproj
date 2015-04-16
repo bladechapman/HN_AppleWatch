@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6850623628FD66552B2A7F16 /* Pods-HackerNews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C0FDE917F55E00F73D969 /* Pods-HackerNews-dummy.m */; };
+		B8C140A08749E947F209AFA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B4AE20087FBCD26B723D4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B1D384E2FF1ED0ECE714C54 /* Pods-HackerNews-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HackerNews-environment.h"; sourceTree = "<group>"; };
+		0C2B4AE20087FBCD26B723D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0CC3D7C1ADE822FB516DD70F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		110B8B6F93BBFD4437376B2E /* libPods-HackerNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A4DCD5844945EC2B80C7A9 /* Pods-HackerNews-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HackerNews-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F51B61A4E914D95F5ACD8BF /* Pods-HackerNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HackerNews.release.xcconfig"; sourceTree = "<group>"; };
+		6E1D4192A64875D8ACA0F2BF /* Pods-HackerNews-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HackerNews-resources.sh"; sourceTree = "<group>"; };
+		705F63993E8453522C202A40 /* Pods-HackerNews-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HackerNews-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A7C0FDE917F55E00F73D969 /* Pods-HackerNews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HackerNews-dummy.m"; sourceTree = "<group>"; };
+		ED2F308EA320D04C919CDF23 /* Pods-HackerNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HackerNews.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D015964CED79AC9ED562D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8C140A08749E947F209AFA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2159F5B53C4E72900249339F /* Pods-HackerNews */ = {
+			isa = PBXGroup;
+			children = (
+				705F63993E8453522C202A40 /* Pods-HackerNews-acknowledgements.markdown */,
+				35A4DCD5844945EC2B80C7A9 /* Pods-HackerNews-acknowledgements.plist */,
+				7A7C0FDE917F55E00F73D969 /* Pods-HackerNews-dummy.m */,
+				0B1D384E2FF1ED0ECE714C54 /* Pods-HackerNews-environment.h */,
+				6E1D4192A64875D8ACA0F2BF /* Pods-HackerNews-resources.sh */,
+				ED2F308EA320D04C919CDF23 /* Pods-HackerNews.debug.xcconfig */,
+				4F51B61A4E914D95F5ACD8BF /* Pods-HackerNews.release.xcconfig */,
+			);
+			name = "Pods-HackerNews";
+			path = "Target Support Files/Pods-HackerNews";
+			sourceTree = "<group>";
+		};
+		3D17C42AABCAF242C5A13ECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F6FBFBFEF68DCF14C074A8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E7A9272C2082AF6915D3B47 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		53F6FBFBFEF68DCF14C074A8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B4AE20087FBCD26B723D4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6CEDD5C02913019F7D430E02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E7A9272C2082AF6915D3B47 /* Firebase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77FB78FDC12C1B64950C83A2 = {
+			isa = PBXGroup;
+			children = (
+				0CC3D7C1ADE822FB516DD70F /* Podfile */,
+				3D17C42AABCAF242C5A13ECC /* Frameworks */,
+				6CEDD5C02913019F7D430E02 /* Pods */,
+				886ADE750F28C02A0D4C4387 /* Products */,
+				8941136AA3086B40A3B3D1FE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		886ADE750F28C02A0D4C4387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				110B8B6F93BBFD4437376B2E /* libPods-HackerNews.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8941136AA3086B40A3B3D1FE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2159F5B53C4E72900249339F /* Pods-HackerNews */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE1E3C1A1700D2A29FAB1E30 /* Pods-HackerNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C205335477FABF021CFB5A31 /* Build configuration list for PBXNativeTarget "Pods-HackerNews" */;
+			buildPhases = (
+				4C492E9B1B8F882682A11D7D /* Sources */,
+				2D015964CED79AC9ED562D38 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HackerNews";
+			productName = "Pods-HackerNews";
+			productReference = 110B8B6F93BBFD4437376B2E /* libPods-HackerNews.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B5E340AE18FEF5E1FBCBB69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = EBFAC2637074F0814DF12335 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 77FB78FDC12C1B64950C83A2;
+			productRefGroup = 886ADE750F28C02A0D4C4387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE1E3C1A1700D2A29FAB1E30 /* Pods-HackerNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C492E9B1B8F882682A11D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6850623628FD66552B2A7F16 /* Pods-HackerNews-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A05CF73A84414F1C6660B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8AA9C37F63F36B9B1631FD2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2F308EA320D04C919CDF23 /* Pods-HackerNews.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A35B277CDD26D1490CE22CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4D0F2C454B253097EE25FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F51B61A4E914D95F5ACD8BF /* Pods-HackerNews.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C205335477FABF021CFB5A31 /* Build configuration list for PBXNativeTarget "Pods-HackerNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AA9C37F63F36B9B1631FD2E /* Debug */,
+				C4D0F2C454B253097EE25FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFAC2637074F0814DF12335 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A05CF73A84414F1C6660B1E /* Debug */,
+				A35B277CDD26D1490CE22CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B5E340AE18FEF5E1FBCBB69 /* Project object */;
+}
