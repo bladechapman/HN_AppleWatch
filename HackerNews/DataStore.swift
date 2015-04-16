@@ -13,8 +13,13 @@ var sharedDataStore : DataStore?
 class DataStore: NSObject {
     
     let ref = Firebase(url: "https://hacker-news.firebaseio.com/v0/")
+    var items : AnyObject?
+    var newStories : AnyObject?
+    var topStories : AnyObject?
+    var users : AnyObject?
+    
     override init() {
-        println("init called")
+        
     }
     
     class var sharedInstance : DataStore {
@@ -25,13 +30,18 @@ class DataStore: NSObject {
         return sharedDataStore!
     }
     
-    func retrieveItems() {
-        println("req initialized")
-        self.ref.childByAppendingPath("topstories").observeSingleEventOfType(.Value, withBlock: { snapshot in
-            println(snapshot.value[0])
-            self.ref.childByAppendingPath("item/\(snapshot.value[0])").observeSingleEventOfType(.Value, withBlock: { snapshot in
-                println(snapshot.value)
-            })
-        })
+    func retrieveX(#endpoint: String, var data: AnyObject?, callback : (Void -> Void)?) {
+        self.ref.childByAppendingPath(endpoint).observeSingleEventOfType(.Value) { (snapshot : FDataSnapshot!) -> Void in
+            data = snapshot.value
+            if let unwrappedCallback = callback {
+                unwrappedCallback()
+            }
+        }
     }
+    func retrieveAllItems() { self.retrieveX(endpoint: "item", data: self.items, callback: nil)}
+    func retrieveNewStories() { self.retrieveX(endpoint: "newstories", data: self.newStories, callback: nil)}
+    func retrieveTopStores() { self.retrieveX(endpoint: "topstories", data: self.topStories, callback: nil)}
+    func retrieveUsers() { self.retrieveX(endpoint: "user", data: self.users, callback: nil)}
+    
+    
 }

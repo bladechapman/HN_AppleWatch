@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         var store = DataStore.sharedInstance
-        store.retrieveItems()
+        store.retrieveTopStores()
         
     }
 
