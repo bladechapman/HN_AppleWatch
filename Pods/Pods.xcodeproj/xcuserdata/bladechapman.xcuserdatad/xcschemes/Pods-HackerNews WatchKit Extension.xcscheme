@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4CA32A05F14AB79D36D1C0A3"
-               BuildableName = "libPods-HackerNews.a"
-               BlueprintName = "Pods-HackerNews"
+               BlueprintIdentifier = "B70B7056BA11E70E887AC935"
+               BuildableName = "libPods-HackerNews WatchKit Extension.a"
+               BlueprintName = "Pods-HackerNews WatchKit Extension"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
