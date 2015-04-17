@@ -30,18 +30,17 @@ class DataStore: NSObject {
         return sharedDataStore!
     }
     
-    func retrieveX(#endpoint: String, var data: AnyObject?, callback : (Void -> Void)?) {
+    func retrieveX(#endpoint: String, callback : (AnyObject? -> Void)?) {
         self.ref.childByAppendingPath(endpoint).observeSingleEventOfType(.Value) { (snapshot : FDataSnapshot!) -> Void in
-            data = snapshot.value
             if let unwrappedCallback = callback {
-                unwrappedCallback()
+                unwrappedCallback(snapshot.value)
             }
         }
     }
-    func retrieveAllItems() { self.retrieveX(endpoint: "item", data: self.items, callback: nil)}
-    func retrieveNewStories() { self.retrieveX(endpoint: "newstories", data: self.newStories, callback: nil)}
-    func retrieveTopStores() { self.retrieveX(endpoint: "topstories", data: self.topStories, callback: nil)}
-    func retrieveUsers() { self.retrieveX(endpoint: "user", data: self.users, callback: nil)}
+    func retrieveAllItems(#callback : (AnyObject? -> Void)?) { self.retrieveX(endpoint: "item", callback: callback)}
+    func retrieveNewStories(#callback : (AnyObject? -> Void)?) { self.retrieveX(endpoint: "newstories", callback: callback)}
+    func retrieveTopStories(#callback : (AnyObject? -> Void)?) { self.retrieveX(endpoint: "topstories", callback: callback)}
+    func retrieveUsers(#callback : (AnyObject? -> Void)?) { self.retrieveX(endpoint: "user", callback: callback)}
     
     
 }

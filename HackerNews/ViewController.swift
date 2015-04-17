@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         var store = DataStore.sharedInstance
-        store.retrieveTopStores()
-        
+        store.retrieveTopStories() { (data : AnyObject?) -> Void in
+            println(data)
+        }
     }
 
     override func didReceiveMemoryWarning() {
