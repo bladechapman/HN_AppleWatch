@@ -34,7 +34,6 @@ class ViewController: UIViewController, UITableViewDataSource {
         var cell = newsTable.dequeueReusableCellWithIdentifier("itemCell") as! UITableViewCell
         if let label : AnyObject = store.topStories?.value[indexPath.row] {
             store.retrieveItemWithId(String(stringInterpolationSegment: store.topStories!.value[indexPath.row]), callback: { (data : FDataSnapshot!) -> Void in
-                
                 if let title : AnyObject = data.value["title"] {
                     cell.textLabel!.text = "\(indexPath.row) : \(title)"
                 }
